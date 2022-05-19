@@ -26,7 +26,7 @@ const platform = new Platform({
   y: canvas.height - 20,
   width: 64,
   height: 16,
-  speed: 1,
+  speed: 4,
   leftKey: false,
   rightKey: false,
 });
