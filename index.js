@@ -55,12 +55,12 @@ function loop(time) {
     ball.y -= ball.speed * Math.sin(ball.angle);
 
     if (platform.leftKey) {
-      platform.x = Math.max(0, platform.x - 1 * platform.speed);
+      platform.x = Math.max(0, platform.x - platform.speed);
     }
     if (platform.rightKey) {
       platform.x = Math.min(
         canvas.width - platform.width,
-        platform.x + 1 * platform.speed
+        platform.x + platform.speed
       );
     }
 
