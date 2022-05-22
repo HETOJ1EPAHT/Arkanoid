@@ -1,5 +1,3 @@
-const scoreBoard = document.querySelector("output");
-
 function getScoreByColor(array) {
   array.forEach((block) => {
     let score = null;
@@ -10,14 +8,14 @@ function getScoreByColor(array) {
       block.score = 80;
     }
     if (block.sprite == "redWall") {
-      block.score = 90;
+      block.score = 60;
     }
     if (block.sprite == "orangeWall") {
-      block.score = 60;
+      block.score = 40;
     }
   });
 }
 
 function scoreCounter({ score }) {
-  scoreBoard.innerText = Number(scoreBoard.innerText) + Number(score);
+  scoreBoard.value = Number(scoreBoard.value) + Number(score);
 }
